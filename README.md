@@ -42,6 +42,8 @@ Antes de ejecutar el script, asegúrate de tener lo siguiente:
 
 ## Instalación
 
+Puedes descargal el sript y ejecutarlo como administrador, o:
+
 1. Abre powershell ISE como administrador.
 2. Selecciona Nuevo script
 3. Copia el script vim.ps1
@@ -51,6 +53,9 @@ Antes de ejecutar el script, asegúrate de tener lo siguiente:
 ![image](https://github.com/user-attachments/assets/b9992b22-1205-4fde-a0ae-f24ebf4794d7)
 
 
+Al finalizar abre vim y ejecuta
+PlugInstall
+CocInstall coc-pyright
 
 ## Verificación
 Después de la instalación, es crucial verificar que todo funcione correctamente:
