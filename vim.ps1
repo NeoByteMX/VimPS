@@ -248,19 +248,6 @@ nmap <leader>ed :VenvDeactivate<CR>
 
 Set-Content -Path $vimrcPath -Value $content -Force
 
-# Instalar los plugins de Vim-Plug
-Write-Info "Instalando plugins de Vim-Plug..."
-vim -c "PlugInstall" -c "qa"
-
-if ($LASTEXITCODE -ne 0) {
-    Write-Host "Error al instalar los plugins de Vim-Plug." -ForegroundColor Red
-    exit 1
-}
-
-# Instalar la extensión coc-pyright para coc.nvim
-Write-Info "Instalando extensión coc-pyright para coc.nvim..."
-vim -c "CocInstall coc-pyright" -c "qa"
-
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Error al instalar la extensión coc-pyright." -ForegroundColor Red
     exit 1
